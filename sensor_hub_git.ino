@@ -111,7 +111,7 @@
    //roomtemp from BME280
      strcpy(outTopic_status,outTopic);
     dtostrf(bme280_temperature,2,2,msg); 
-    strcat(outTopic_status,"troom");
+    strcat(outTopic_status,"temperature");
     client.publish(outTopic_status, msg);
  
    //BME280 Humidity
