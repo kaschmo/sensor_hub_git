@@ -1,3 +1,5 @@
+#include <Arduino.h>
+#line 1 "/Users/karsten/Documents/00_Project_Support/10_arduino/Projects/sensor_hub_git/sensor_hub_git.ino"
 /*
  * Hub to send sensor values via MQTT
  * BME280 for P,H,T
@@ -47,6 +49,23 @@
  ESP8266WebServer httpServer(80);
  ESP8266HTTPUpdateServer httpUpdater;
  
+#line 50 "/Users/karsten/Documents/00_Project_Support/10_arduino/Projects/sensor_hub_git/sensor_hub_git.ino"
+void setup_wifi();
+#line 76 "/Users/karsten/Documents/00_Project_Support/10_arduino/Projects/sensor_hub_git/sensor_hub_git.ino"
+void callback(char* topic, byte* payload, unsigned int length);
+#line 105 "/Users/karsten/Documents/00_Project_Support/10_arduino/Projects/sensor_hub_git/sensor_hub_git.ino"
+void sendSensorValues();
+#line 137 "/Users/karsten/Documents/00_Project_Support/10_arduino/Projects/sensor_hub_git/sensor_hub_git.ino"
+void reconnect();
+#line 162 "/Users/karsten/Documents/00_Project_Support/10_arduino/Projects/sensor_hub_git/sensor_hub_git.ino"
+void update_sensors();
+#line 170 "/Users/karsten/Documents/00_Project_Support/10_arduino/Projects/sensor_hub_git/sensor_hub_git.ino"
+void handle_root();
+#line 175 "/Users/karsten/Documents/00_Project_Support/10_arduino/Projects/sensor_hub_git/sensor_hub_git.ino"
+void setup();
+#line 204 "/Users/karsten/Documents/00_Project_Support/10_arduino/Projects/sensor_hub_git/sensor_hub_git.ino"
+void loop();
+#line 50 "/Users/karsten/Documents/00_Project_Support/10_arduino/Projects/sensor_hub_git/sensor_hub_git.ino"
  void setup_wifi() {
    delay(10);
    // We start by connecting to a WiFi network

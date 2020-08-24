@@ -3,6 +3,5 @@
     "configuration": "CpuFrequency=80,FlashFreq=40,FlashMode=dio,UploadSpeed=115200,FlashSize=1M64,ResetMethod=ck,Debug=Disabled,DebugLevel=None____",
     "sketch": "sensor_hub_git.ino",
     "port": "/dev/cu.Bluetooth-Incoming-Port",
-    "output": "../last_build"
-    
+    "output": "./last_build"
 }
